@@ -1,0 +1,36 @@
+@import './base.scss';
+
+#app {
+  max-width: 1466px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: normal;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  font-size: 1.06rem;
+  border-radius: 8px;
+  border: 2px solid var(--c-divider);
+  color: var(--c-text);
+  outline: none;
+  transition: 200ms border-color;
+  &::placeholder {
+    color: var(--c-grey);
+  }
+  &:focus {
+    border-color: var(--c-primary);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: var(--c-heading);
+}
